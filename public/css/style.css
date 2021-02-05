@@ -1,16 +1,22 @@
 ul.menu{
     width:200px;
-    height:auto;
+    min-height:30px;
     background-color: blueviolet;
     border-radius:5px; 
     list-style-type: none;
     color:white;
     margin:0; padding:0; 
+    /* transition-property: height;
+    transition-duration: .2s; */
 }
+
 ul.menu>li{
     text-align: left;
     position:relative;
     padding:10px;
+}
+ul.menu>li:hover{
+    cursor: pointer;
 }
 ul.menu>li:after{
     position:absolute;
@@ -21,6 +27,16 @@ ul.menu>li:after{
 }
 ul.menu>ul{
     padding-left:10px;
+    /* visibility: hidden;
+    opacity: 0;
+    transition-property: opacity, visibility;
+    transition-duration: .4s, 0s;
+    transition-delay: 0s, .4s; */
+}
+ul.menu>li:hover + ul{
+    /* visibility: visible;
+    opacity: 1;
+    transition-delay: 0s, 0s; */
 }
 ul.menu>ul li{
     list-style-type: none;
