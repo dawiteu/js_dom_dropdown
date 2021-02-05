@@ -1,0 +1,32 @@
+ul.menu{
+    width:200px;
+    height:auto;
+    background-color: blueviolet;
+    border-radius:5px; 
+    list-style-type: none;
+    color:white;
+    margin:0; padding:0; 
+}
+ul.menu>li{
+    text-align: left;
+    position:relative;
+    padding:10px;
+}
+ul.menu>li:after{
+    position:absolute;
+    right:0; 
+    content:'+';
+    margin-right:10px;
+    font-weight: bold;
+}
+ul.menu>ul{
+    padding-left:10px;
+}
+ul.menu>ul li{
+    list-style-type: none;
+    padding:3px;
+}
+ul.menu>ul li a{
+    color:white;
+    text-decoration:underline; 
+}
